@@ -1,29 +1,53 @@
-// import logo from './logo.svg';
+// import Logo from './img';
 import './App.css';
+import React from 'react';
+import hamburguesa from './img/hamburguesa.jpg'
 
-function App() {
+function Inicio() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Hola Mundo</p>
-        {/* <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
+        <p>Burguer Queen</p>
+        <img src={ hamburguesa } className="hamburguesa" alt="logo" />
+        <br/>
+        <button type="submit">Mesero</button>
+        <button type="submit">Cocinero</button>
       </header>
     </div>
   );
 }
 
-  
+class NameForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
 
-export default App;
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    alert('A name was submitted: ' + this.state.value);
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Nombre de cliente:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <br/>
+          N° de Mesa:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label>
+      </form>
+    );
+  }
+}
+
+export {NameForm, Inicio};
