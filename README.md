@@ -11,7 +11,7 @@
 
 ***
 
-## 1. Preámbulo
+## 1. Preámbulo.
 
 [React](https://es.reactjs.org/), [Angular](https://angular.io/) y [Vue](https://vuejs.org/)
 son algunos de los _frameworks_ y _librerías_ de JavaScript más utilizados por
