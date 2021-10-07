@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {NameForm, Inicio} from './App';
+import {App} from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Inicio/>
-    <NameForm />
+    <App/>
+    {/* <NameForm /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
