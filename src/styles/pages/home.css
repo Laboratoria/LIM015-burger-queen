@@ -1,0 +1,23 @@
+.Home {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-color: #FEE253;
+  }
+
+.Home-logo {
+  padding-top: 80px;
+  height: 60vmin;
+}
+
+.Home-btn {
+  width: 200px;
+  height: 50px;
+  margin: 30px 40px;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  color: #ff0e0e;
+  box-shadow:4px 4px 4px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}

@@ -1,53 +1,51 @@
 // import Logo from './img';
 import './App.css';
-import React from 'react';
-import hamburguesa from './img/hamburguesa.jpg'
+// import React from 'react';
+// import hamburguesa from './img/hamburguesa.jpg'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Home from './components/pages/home.jsx'
+import Cocinero from './components/pages/kitchen.jsx'
+import Mesero from './components/pages/waiter.jsx'
 
-function Inicio() {
+
+// const Home = () => <h1>Este es el home</h1>
+// const Cocinero = () => <h1>Este es cocinero</h1>
+// const Mesero = () => <h1>Este es mesero</h1>
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Burguer Queen</p>
-        <img src={ hamburguesa } className="hamburguesa" alt="logo" />
-        <br/>
-        <button type="submit">Mesero</button>
-        <button type="submit">Cocinero</button>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      {/* <button>
+        <Link to='/'>
+          Home
+        </Link>
+      </button> */}
+      {/* <button>
+      <Link to='/Cocinero'>
+        Cocinero
+      </Link>
+      </button>
+      <button>
+      <Link to='/Mesero'>
+        Mesero
+      </Link>
+      </button> */}
+
+
+      <Switch>
+        <Route path='/Cocinero'>
+          <Cocinero />
+        </Route>
+        <Route path='/Mesero'>
+          <Mesero />
+        </Route>
+        <Route path='/'>
+          <Home />
+        </Route>
+      </Switch>
+    </BrowserRouter>
+  )
 }
 
-class NameForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {value: ''};
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleChange(event) {
-    this.setState({value: event.target.value});
-  }
-
-  handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value);
-    event.preventDefault();
-  }
-
-  render() {
-    return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          Nombre de cliente:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
-          <br/>
-          N° de Mesa:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
-        </label>
-      </form>
-    );
-  }
-}
-
-export {NameForm, Inicio};
+export { App };
