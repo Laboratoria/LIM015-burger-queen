@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 function Cocinero(props) {
     return (
     
     <nav className="menu-nav">
-      <li className="title-nav" onClick={props.home}>
+      <Link className= "link" style={{textDecoration:'none'}} to='/mesero'>
         BREAKFAST
-      </li>
+    </Link>
       <li className="title-nav" onClick={props.kitchen}>
         LUNCH
       </li>
