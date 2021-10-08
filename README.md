@@ -1,5 +1,4 @@
-# Burger Queen pame meli y rocio
-
+# Burger Queen
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
