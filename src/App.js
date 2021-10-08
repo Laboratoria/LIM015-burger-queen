@@ -3,9 +3,9 @@ import './App.css';
 // import React from 'react';
 // import hamburguesa from './img/hamburguesa.jpg'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Home from './pages/home.jsx'
-import Cocinero from './pages/kitchen.jsx'
-import Mesero from './pages/waiter.jsx'
+import Home from './components/pages/home.jsx'
+import Cocinero from './components/pages/kitchen.jsx'
+import Mesero from './components/pages/waiter.jsx'
 
 
 // const Home = () => <h1>Este es el home</h1>
@@ -46,9 +46,6 @@ const App = () => {
     </BrowserRouter>
   )
 }
-
-
-
 
 
 export { App };
