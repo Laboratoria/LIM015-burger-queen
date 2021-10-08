@@ -1,0 +1,14 @@
+.dataClient {
+    display: flex;
+}
+
+.text {
+    margin-top: 15px;
+    height: 15px;
+}
+
+.order {
+    border: black 2px solid;
+    height: 40vmax;
+    
+}
