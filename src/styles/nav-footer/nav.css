@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  color:black;
+  font-size: .875rem;
+  text-align: center;
+  left: 0px;
+  bottom: 0;
+  background-color: #FEE253;
+}

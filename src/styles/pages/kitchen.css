@@ -1,4 +1,25 @@
-.menu-nav > link {
-  
-    text-decoration: none;
-  }
+.dataClient {
+  display: flex;
+}
+
+.text {
+  margin-top: 15px;
+  height: 15px;
+}
+
+.order {
+  border: black 2px solid;
+  height: 20vmax;
+}
+
+.menu-orden {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  margin: 10px 0px 10px 0px;
+  color:black;
+  font-size: .875rem;
+  text-align: center;
+  background-color: #FEE253;
+}
