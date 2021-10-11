@@ -14,6 +14,7 @@ function Cocinero(props) {
 
       {/* PARTE DE MENU POR SECCIONES
       creo que debe ir en otro jsx como en el nav */}
+
       <nav className='menu-orden'>
         <li className='orden-breakfasr' onClick={props.home}>
           BREAKFAST
@@ -27,7 +28,8 @@ function Cocinero(props) {
       </nav>
 
       {/* PARTE DONDE INGRESA EL NOMBRE DEL CLIENTE Y EL NUMERO DE MESA */}
-      <section>
+      <section className = 'padre'>
+      <section className = 'temp-waiter side'>
         <section className='dataClient'>
           <p>NOMBRE DEL CLIENTE:</p>
           <input type='text' className='text' />
@@ -38,12 +40,24 @@ function Cocinero(props) {
         </section>
 
         <div className='order'>
-          *Aqui iran dinamicamente los pedidos*
+          *Aqui iran dinamicamente los pedidos(cambiar los div por otro elemento)*
         </div>
         <button>ENVIAR A LA COCINA</button>
         <button>CANCELAR PEDIDO</button>
       </section>
-
+      {/*AGREGADO 10/10 */}
+      <section className = 'temp-waiter'>
+        <section>
+          <button>DESAYUNOS</button>
+          <button>HAMBURGUESAS</button>
+          <button>ACOMPAÑAMIENTOS</button>
+          <button>BEBIDAS</button>
+        </section>
+        <div className = 'order'>
+          *Aqui iran los productos para elegir*
+        </div>
+      </section>
+      </section>
     {/* FOOTER DE LA PAGINA */}
       <div>
         <Footer />
