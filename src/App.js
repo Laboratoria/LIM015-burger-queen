@@ -7,31 +7,9 @@ import Home from './components/pages/home.jsx'
 import Cocinero from './components/pages/kitchen.jsx'
 import Mesero from './components/pages/waiter.jsx'
 
-
-// const Home = () => <h1>Este es el home</h1>
-// const Cocinero = () => <h1>Este es cocinero</h1>
-// const Mesero = () => <h1>Este es mesero</h1>
-
 const App = () => {
   return (
     <BrowserRouter>
-      {/* <button>
-        <Link to='/'>
-          Home
-        </Link>
-      </button> */}
-      {/* <button>
-      <Link to='/Cocinero'>
-        Cocinero
-      </Link>
-      </button>
-      <button>
-      <Link to='/Mesero'>
-        Mesero
-      </Link>
-      </button> */}
-
-
       <Switch>
         <Route path='/cocinero'>
           <Cocinero />

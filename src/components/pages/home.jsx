@@ -10,13 +10,13 @@ function Home() {
         <img src={Logo} className='Home-logo' alt='Burguer Queen Logo'/>
         <br/>
         <button className="Home-btn">
-          <Link to='/Cocinero'>
-            Cocinero
+          <Link to='/Mesero'>
+            Mesero
           </Link>
         </button>
       <button className="Home-btn">
-        <Link to='/Mesero'>
-          Mesero
+        <Link to='/Cocinero'>
+          Cocinero
         </Link>
       </button>
     </div>
