@@ -15,7 +15,7 @@ function Cocinero(props) {
       {/* PARTE DE MENU POR SECCIONES
       creo que debe ir en otro jsx como en el nav */}
 
-      <nav className='menu-orden'>
+      {/* <nav className='menu-orden'>
         <li className='orden-breakfasr' onClick={props.home}>
           BREAKFAST
         </li>
@@ -25,7 +25,7 @@ function Cocinero(props) {
         <li className='orden-drink' onClick={props.waiter}>
           DRINKS
         </li>
-      </nav>
+      </nav> */}
 
       {/* PARTE DONDE INGRESA EL NOMBRE DEL CLIENTE Y EL NUMERO DE MESA */}
       <section className = 'padre'>
