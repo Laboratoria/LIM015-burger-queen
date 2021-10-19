@@ -1,0 +1,38 @@
+{
+    "menu":[{
+        "desayuno": {
+            "american coffe": 5,
+            "milk with coffe":	7,
+            "jam and cheese hamburger":	10,
+            "natural fruits juice":	7
+        },
+        "almuerzo": {
+            "hamburgers":{
+                "type":[
+                    "beef", 
+                    "chicken",
+                    "vegetarian"
+                ],
+                "simple hamburger": 10,
+                "Double hamburger":	15,
+                "jam and cheese hamburger":	10,
+                "natural fruits juice":	7,
+                "plus":{
+                    "cheese": 1,
+                    "egg": 1
+                }
+            },
+            "accompaniments":{
+                "French fries": 5,
+                "Onion rings":	5
+            },
+            "drinks":{
+                "Water 500ml": 5,
+                "Water 750ml":	7,
+                "Drink / soda 500ml":	7,
+                "Drink / soda 750ml": 10
+            }
+
+        }
+    }]
+}
