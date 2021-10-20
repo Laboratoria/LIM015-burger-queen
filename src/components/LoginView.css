@@ -1,0 +1,51 @@
+.Login{
+    /* background-image: url(../images/fondo2.png);
+    background-size: cover; */
+    display: flex;
+}
+
+.frameLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    height: 500px;
+    background: white;
+    border: 1px solid white;
+    margin-left: 50px;
+    margin-top: -40px;
+    /* margin-bottom: -40px; */
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 3px 2px 2px 6px rgb(255, 255, 255);
+    overflow: hidden;
+}
+.perfilSelection {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  select {
+    width: 90px;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 10px;
+    /* font-family: "Poppins", sans-serif; */
+    font-weight: bolder;
+    cursor: pointer;
+  }
+.sigin{
+        width: 160px;
+        padding: 10px;
+        margin: 10px;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: bolder;
+        cursor: pointer;
+        border-radius: 7px;
+        outline: none;
+        border: 1px solid rgb(121, 121, 121);
+        background-color: #F5AC25;
+}
+
