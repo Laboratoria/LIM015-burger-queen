@@ -9,6 +9,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { ProductsComponent } from './components/products/products.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { NavComponent } from './components/nav/nav.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { GetUserNameComponent } from './components/get-user-name/get-user-name.component';
 import { HomeComponent } from './view/home/home.component';
 
@@ -18,6 +19,7 @@ import { HomeComponent } from './view/home/home.component';
     ProductsComponent,
     OrdersComponent,
     NavComponent,
+    FooterComponent,
     GetUserNameComponent,
     HomeComponent
   ],

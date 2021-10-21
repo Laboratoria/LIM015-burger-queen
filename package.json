@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Elipinto23/LIM015-burger-queen/issues"
   },
-  "homepage": "https://github.com/Elipinto23/LIM015-burger-queen#readme"
+  "homepage": "https://github.com/Elipinto23/LIM015-burger-queen#readme",
+  "dependencies": {
+    "tslib": "^2.3.1"
+  }
 }
