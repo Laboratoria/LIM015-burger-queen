@@ -8,12 +8,14 @@ import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { ProductsComponent } from './components/products/products.component';
 import { OrdersComponent } from './components/orders/orders.component';
+import { NavComponent } from './components/nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
-    OrdersComponent
+    OrdersComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
