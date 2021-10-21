@@ -9,13 +9,15 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { ProductsComponent } from './components/products/products.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { NavComponent } from './components/nav/nav.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
     OrdersComponent,
-    NavComponent
+    NavComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
