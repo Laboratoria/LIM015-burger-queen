@@ -12,6 +12,11 @@ import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { GetUserNameComponent } from './components/get-user-name/get-user-name.component';
 import { HomeComponent } from './view/home/home.component';
+import { ContainerProductComponent } from './components/container-product/container-product.component';
+import { ItemMenuComponent } from './components/item-menu/item-menu.component';
+import { OrderDetailComponent } from './view/order-detail/order-detail.component';
+import { ReadyOrdersComponent } from './view/ready-orders/ready-orders.component';
+import { HistoryOrdersComponent } from './view/history-orders/history-orders.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { HomeComponent } from './view/home/home.component';
     NavComponent,
     FooterComponent,
     GetUserNameComponent,
-    HomeComponent
+    HomeComponent,
+    ContainerProductComponent,
+    ItemMenuComponent,
+    OrderDetailComponent,
+    ReadyOrdersComponent,
+    HistoryOrdersComponent
   ],
   imports: [
     BrowserModule,
