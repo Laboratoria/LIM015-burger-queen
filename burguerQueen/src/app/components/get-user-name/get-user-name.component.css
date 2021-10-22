@@ -9,7 +9,7 @@
     border: 1.6px solid #ebbbbb;
     height: 40px;
     width: 50%;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 .nameUser:hover{
     border: 1.6px solid #fa8484;
@@ -17,7 +17,8 @@
 }
 .title{
     font-size: calc(1.5em + 1.5vw);
-    margin: 0%;
+    
+    margin: 2px auto;
     font-family: 'Poppins', sans-serif;
 }
 .name ,.nameUser{
