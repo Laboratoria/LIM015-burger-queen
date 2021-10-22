@@ -1,5 +1,19 @@
-<nav class="navbar navbar-dark bg-dark">
+<!-- <nav class="navbar navbar-dark bg-dark">
     <a class="nav-link active" aria-current="page" href="#">Burguer Queen</a>
     <a class="nav-link" href="#Menu">Menu</a>
     <a class="nav-link" href="#Orders">Orders</a>
-  </nav>
+  </nav> -->
+
+  <header>
+    <div class="contenedorHeader">
+        <h1 class="title">Burger Queen🍔✨  <i class="fas fa-hamburger"></i></h1>
+      <input type="checkbox" id="menu-bar">
+      <label class="fas fa-bars" for="menu-bar"></label>
+      <nav class="menu">
+        <a routerLink="/home" routerLinkActive="active"> Menu</a>
+        <a routerLink="/orders" routerLinkActive="active">Processing</a>
+        <a routerLink="/readyOrders" routerLinkActive="active"> Ready</a>
+        <a routerLink="/historyOrders" routerLinkActive="active"> Delivered</a>
+      </nav>
+    </div>
+  </header>
