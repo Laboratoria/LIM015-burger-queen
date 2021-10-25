@@ -1,12 +1,26 @@
 import React from 'react';
-import LoginView from './components/LoginView';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  // Link
+} from "react-router-dom";
+import {CookView} from './components/CookView';
+import {LoginView} from './components/LoginView';
+import {MenuView} from './components/MenuView';
+import { NotFound } from './components/NotFound.js';
 
 function App() {
-  return (  
-      <div>
-        <h1>Hola Mundo</h1>
-        <LoginView></LoginView>
-      </div>
+
+  return (
+    <Router>
+        <Switch>
+          <Route exact path = '/' component={LoginView} />
+          <Route path = '/menu' component= {MenuView} />
+          <Route path = '/cook' component={CookView} />
+          <Route path ='*' component ={NotFound} />
+        </Switch>
+    </Router>
 
   );
 }
