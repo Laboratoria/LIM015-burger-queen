@@ -7,7 +7,6 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { ProductsComponent } from './components/products/products.component';
-import { OrdersComponent } from './components/orders/orders.component';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { GetUserNameComponent } from './components/get-user-name/get-user-name.component';
@@ -17,12 +16,12 @@ import { ItemMenuComponent } from './components/item-menu/item-menu.component';
 import { OrderDetailComponent } from './view/order-detail/order-detail.component';
 import { ReadyOrdersComponent } from './view/ready-orders/ready-orders.component';
 import { HistoryOrdersComponent } from './view/history-orders/history-orders.component';
+import { ItemOrderComponent } from './components/item-order/item-order.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
-    OrdersComponent,
     NavComponent,
     FooterComponent,
     GetUserNameComponent,
@@ -31,7 +30,8 @@ import { HistoryOrdersComponent } from './view/history-orders/history-orders.com
     ItemMenuComponent,
     OrderDetailComponent,
     ReadyOrdersComponent,
-    HistoryOrdersComponent
+    HistoryOrdersComponent,
+    ItemOrderComponent
   ],
   imports: [
     BrowserModule,
