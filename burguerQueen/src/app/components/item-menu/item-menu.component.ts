@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-item-menu',
@@ -6,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./item-menu.component.css']
 })
 export class ItemMenuComponent implements OnInit {
+  products: Observable<any[]>;
+ 
+  constructor(firestore: AngularFirestore) {
+    this.products = firestore.collection('products').valueChanges();
+  
+  }
 
-  constructor() { }
 
   ngOnInit(): void {
   }

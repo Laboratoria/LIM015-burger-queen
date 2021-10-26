@@ -1,1 +1,11 @@
-<p>item-menu works!</p>
+<p>item-menu works! </p>
+<ul>
+    <li  *ngFor="let product of products | async">
+      {{product.title}}
+    <img src="{{product.image}}" alt="">
+      {{product.price}}
+     
+    </li>
+
+   
+  </ul>
