@@ -5,13 +5,13 @@ import {
   Route,
   // Link
 } from "react-router-dom";
+import './App.css'
 import {CookView} from './components/CookView';
 import {LoginView} from './components/LoginView';
 import {MenuView} from './components/MenuView';
 import { NotFound } from './components/NotFound.js';
 
 function App() {
-
   return (
     <Router>
         <Switch>
