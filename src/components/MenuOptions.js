@@ -3,64 +3,45 @@ import './MenuOptions.css'
 import { Button, ButtonGroup, ToggleButton} from 'react-bootstrap';
 
 export const MenuOptions = () => {
-    const [radioValue, setRadioValue] = useState('1');
-    const [option, setOption] = useState([]);
-  
-    const radios = [
-      { name: 'BREAKFAST', value: '1' },
-      { name: 'ALL DAY', value: '2' },
-    ];
+    const [menu, setMenu] = useState([]);
+    const [typeProduct, setTypeProduct] = useState('Breakfast')
+    
+    const getProducts = async () => {
+        const data = await fetch("data/menuData.json");//la data json debe estar ubicada en el directorio publico "public"
+        const options = await data.json();
+        console.log(options);
+        return options;
+    }
 
 
     // Después de que se cargue la página ejecutará la función obtainData
     useEffect(() => {
-        obtainData()
-    }, []) //<---Para que se ejecute solo una vez
+        async function fetchList(){
+            const listMenu = await getProducts()
+            setMenu(listMenu.filter(item=> item.type ===typeProduct))
+        }
+        fetchList()
+    }, [typeProduct]) //<---Para que se ejecute solo una vez
 
-    const obtainData = async () => {
-        const data = await fetch("data/menuData.json");//la data json debe estar ubicada en el directorio publico "public"
-        const options = await data.json();
-        console.log(options);
-        setOption(options);
-    }
+    
     return (
             <div className='sectionMenu'>
                 <br />
                 <header className="menu"> MENU </header>
-                <ButtonGroup>
-                    {radios.map((radio, idx) => (
-                        <ToggleButton
-                            key={idx}
-                            id={`radio-${idx}`}
-                            type="radio"
-                            variant={idx % 2 ? 'outline-success' : 'outline-danger'}
-                            name="radio"
-                            value={radio.value}
-                            checked={radioValue === radio.value}
-                            onChange={(e) => setRadioValue(e.currentTarget.value)}
-                            >
-                        {radio.name}
-                        </ToggleButton>
-                    ))}
-                </ButtonGroup>
+                
+                <br />
+                <button onClick={() => { setTypeProduct('Breakfast'); } }>BREAKFAST</button>
+                <button onClick={() => { setTypeProduct('All Day'); } }>ALL DAY</button>
+
                 <br/>
-                {/* <div className='optionsMenu'> */}
                 <section className='optionsBreakfast'>
-                    {option.map((item) => ( // aca una function descriptiva
-                        <Button className='btnBreak'> 
-                            <div> { item.product } </div> 
-                            <div> $. { item.price}.00 </div>
+                    { menu.map((element) => (//de cada objeto seleccionado los recorremos para sacar el nombre y el precio de cada uno
+                        <Button className='btnBreak' key= {element.id}> 
+                            <div> { element.product } </div> 
+                            <div> $. { element.price}.00 </div>
                         </Button>
                     ))}
                 </section>
-                <section className = 'optionsAllDay'>
-                    {option.map((item)=>(
-                        <Button className='btnAll'>
-                            <div>{ item.price}</div>
-                        </Button>
-                    ))}
-                </section>
-                {/* </div>     */}
             </div>
     )
 }
