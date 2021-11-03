@@ -16,10 +16,10 @@ export const LoginView = () => {
     const handleChange = (e) => {
         if (e.target.name === 'email') {
             setEmail(e.target.value)
-            console.log(e.target.value)
+            // console.log(e.target.value)
         } else if (e.target.name === 'password') {
             setPassword(e.target.value);
-            console.log(e.target.value)
+            // console.log(e.target.value)
         }
     }
 
@@ -31,7 +31,7 @@ export const LoginView = () => {
 
         if (email === '' || password === '') {
             console.log('Ingresar correo y contraseña')
-        } else if (email === 'hola@hola.com') {
+        } else if (email === 'waiter@burgerqueen.com') {
             app.auth().signInWithEmailAndPassword(email, password)
                 .then((userFirebase) => {
                     const user = userFirebase.user;

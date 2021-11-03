@@ -2,16 +2,16 @@ import React, { useState, useEffect} from 'react';
 import './MenuView.css'
 // import { MenuOptions } from './MenuOptions'
 import lineImage from '../images/line.png';
-import Orders from './Orders';
-import Products from "./Products";
-import { Button } from 'react-bootstrap';
+import Order from './Order';
+import Product from "./Product";
+// import { Button } from 'react-bootstrap';
 
 
 export function MenuView() {
   
   const [menu, setMenu] = useState([]);
   const [typeProduct, setTypeProduct] = useState('Breakfast');
-  const [order, setOrder] =useState([]);
+  const [order, setOrder] = useState([]);
   
   const getProducts = async () => {
       const data = await fetch("data/menuData.json");//la data json debe estar ubicada en el directorio publico "public"
@@ -35,18 +35,19 @@ export function MenuView() {
          <div className='sectionMenu'>
                 <br />
                 <header className="menu"> MENU </header>
-                
-                <br />
-                <button onClick={() => { setTypeProduct('Breakfast'); } }>BREAKFAST</button>
-                <button onClick={() => { setTypeProduct('All Day'); } }>ALL DAY</button>
+
+                <div className='buttons'>
+                <button className= 'btnBreakfast' onClick={() => { setTypeProduct('Breakfast'); } }>BREAKFAST</button>
+                <button className= 'btnAllDay' onClick={() => { setTypeProduct('All Day'); } }>ALL DAY</button>
+                </div>
 
                 <br/>
                 <section className='optionsMenuType'>
                     { menu.map((product) => (//de cada objeto seleccionado los recorremos para sacar el nombre y el precio de cada uno
-                        <Products 
+                        <Product 
                             className='btnBreak' 
                             key= {product.id} 
-                            oder={order}
+                            order={order}
                             setOrder={setOrder}
                             product={product}
                             menu={menu}/> 
@@ -61,13 +62,9 @@ export function MenuView() {
         </div>
 
         <div className='sectionOrder'>
-          <input className="client"></input>
-          <div>
-            <Orders
+            <Order
             order={order}
             setOrder={setOrder}/>
-          </div>
-          <Button className="sendOrder">ENVIAR</Button>
         </div>
         
     </section>
