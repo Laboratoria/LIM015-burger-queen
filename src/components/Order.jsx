@@ -5,6 +5,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase";
 
 export default function Order({ order, setOrder }) {
+    const total = order.reduce((acc, item) => acc + item.price , 0)
     const inputName = useRef();
 
     const addOrdersFirebase =async(e)=>{
@@ -72,7 +73,7 @@ export default function Order({ order, setOrder }) {
                     <tr>
                         <th>TOTAL</th>
                         <th></th>
-                        <th>$ X.00</th>
+                        <th>$ {total}.00</th>
                     </tr>
                 </tfoot>
             </table>
