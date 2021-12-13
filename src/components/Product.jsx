@@ -6,29 +6,31 @@ export default function Product({product, menu, order, setOrder}) {
     const { id, name, /* price */} = product;
 
     //Funcion para agregar productos a la sección orders
-    const orderProducts = (id) =>{
-        const product= menu.filter((element)=> element.id === id);
-        console.log(product)
-        setOrder([...order, ...product])
-        // if(product){
-        //     setOrder(
-        //       order.map((element)=>
-        //       element.id === product.id ? { ...order,
-        //         quantity: product.quantity + 1,
-        //         ...product} : element )
-        //     )
-        // } else{
-        //   setOrder([...order, {...product, quantity:1}]);
-        // }
+    const orderProducts = () =>{
+        const selectedProduct= order.find((element)=> element.id === product.id);
+        console.log('Product: ', selectedProduct)
+        console.log('Oder: ', order)
+        // setOrder([...order, ...product])
+        if(selectedProduct){
+            setOrder(
+              order.map((element)=>
+              element.id === product.id ?
+              { ...selectedProduct,
+                quantity: selectedProduct.quantity + 1 
+              } : element )
+            )
+        } else{
+          setOrder([...order, {...product, quantity:1}]);
+        }
     }
   return (
     <Fragment>
-      {menu ? (
+      {menu ? ((
         <Button key={id} onClick={() => orderProducts(id)}>
           <div> {name} </div>
           {/* <div> $. {price}.00 </div> */}
         </Button>
-         ):
+         )):
          (<></>)
       }
     </Fragment>

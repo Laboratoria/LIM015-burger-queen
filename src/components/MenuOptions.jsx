@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import './MenuOptions.css'
+import './MenuOptions.css';
 // import { Button,  ButtonGroup, ToggleButton } from 'react-bootstrap';
 import Products from "./Products";
 

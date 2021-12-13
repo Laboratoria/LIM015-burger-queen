@@ -5,6 +5,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase";
 
 export default function Order({ order, setOrder }) {
+    // **.reduce -> recibe'4' argumentos: acumulador(acc) 
     const total = order.reduce((acc, item) => acc + item.price , 0)
     const inputName = useRef();
 
@@ -28,6 +29,40 @@ export default function Order({ order, setOrder }) {
         console.log("Document written with ID: ", docRef.id);
     
     }
+
+    const btnMinus=(id)=>{
+        // eslint-disable-next-line array-callback-return
+        order.map((element) => {
+            if(element.id===id && element.quantity >= 1){
+                setOrder(
+                    order.map((e)=>
+                        e.id===element.id ?
+                        { ...e,
+                          quantity: e.quantity-1,
+                        }: e 
+                    )
+                )
+            }
+
+        })        
+    }
+
+    const btnPlus= (id) => {
+        // eslint-disable-next-line array-callback-return
+        order.map((element) => {
+            if(element.id === id && element.quantity >= 1) {
+                setOrder(
+                    order.map ((e) => 
+                        e.id === element.id ?
+                        {
+                            ...e,
+                            quantity: e.quantity+1,
+                        }: e
+                    )
+                )
+            }
+        })
+    }
     
     return (
        <>
@@ -45,7 +80,7 @@ export default function Order({ order, setOrder }) {
             <table className="table table-borderless" style={{width:'30%'}}>
                 <thead className="table-active">
                     <tr>
-                        <th> DESCRIPTION </th>
+                        <th>DESCRIPTION</th>
                         <th>QUANTITY</th>
                         <th>PRICE</th>
                     </tr>
@@ -61,9 +96,9 @@ export default function Order({ order, setOrder }) {
                     <tr key={product.id}>
                         <td> {product.name} </td>
                         <td className ='quantityRow'>
-                            <button className='btnsQuantity' /* onClick='' */>➖</button>
-                            <p className ="amount"> 1 </p>
-                            <button className='btnsQuantity' /* onClick='' */>➕</button>
+                            <button className='btnsQuantity' onClick={()=> btnMinus(product.id)}> ➖ </button>
+                            <p className ="amount">  {product.quantity}  </p>
+                            <button className='btnsQuantity' onClick={()=> btnPlus(product.id)}> ➕ </button>
                         </td>
                         <td> $ {product.price}.00</td>
                     </tr> )
@@ -86,6 +121,6 @@ export default function Order({ order, setOrder }) {
     )
 }
 
-// agregar la funcion addProducts de Firebase
-// agregar las funciones de mas y menos de productos
+// agregar la funcion addProducts de Firebase(check-pero comprobar)
+// agregar las funciones de mas y menos de productos (check)
 // EVITAR QUE SE PUEDA CAMBIAR DE VENTANA SI EL USUARIO NO ESTA LOGEADO

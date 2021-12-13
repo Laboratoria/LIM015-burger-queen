@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ButtonGroup, ToggleButton } from 'react-bootstrap';
 
 
-export function BtnsGeneral() {
+export default function BtnsGeneral() {
     const [radioValue, setRadioValue] = useState('1');
   
     const radios = [
