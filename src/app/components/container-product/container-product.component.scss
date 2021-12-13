@@ -1,0 +1,33 @@
+.containerProd{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+.cat1{
+    color: #77662d;
+    background-color: #f7e4a7;
+    margin-right: 2rem;
+}
+.cat2{
+    color: #77662d;
+    background-color: #e9dbb4;
+    margin-left: 2rem;
+}
+.cat1, .cat2{
+    width: 20%;
+   margin: 0 1rem 0 1rem;
+    height: 100%;
+    font-weight: 600;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: calc(0.6em + 0.6vw);
+}
+.cat1:hover, .cat2:hover{
+    text-decoration: underline; 
+}
+
+.cat1:focus, .cat2:focus {
+    outline: none;
+}
+

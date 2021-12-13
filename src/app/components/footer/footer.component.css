@@ -1,0 +1,14 @@
+.containerFooter{
+    background-color: rgba(187, 168, 117, 0.959);
+    color: white;
+    text-align: center;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    height:15%;
+}
+.textFooter{
+   
+    text-align: center;
+    justify-content: center;
+}
