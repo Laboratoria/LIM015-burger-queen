@@ -1,0 +1,20 @@
+.orderProducts{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.table-responsive{
+    width: 100%;
+    
+}
+.btnsQuantity{
+    border-style: hidden;
+    height: 20%;
+    background-color: lightcyan;
+}
+.quantityRow{
+    display: flex;
+    flex-flow: row;
+}

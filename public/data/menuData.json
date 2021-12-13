@@ -1,111 +1,111 @@
 [
     {
         "id" : "bf-001",
-        "product": "American Coffe",
+        "name": "American Coffe",
         "price":5.00,
         "type": "Breakfast"
     },
     {
         "id" : "bf-002",
-        "product": "Milk with Coffe",
+        "name": "Milk with Coffe",
         "price":7.00,
         "type": "Breakfast"
     },
     {
         "id" : "bf-003",
-        "product": "Jam and Cheese Hamburger",
+        "name": "Jam and Cheese Hamburger",
         "price":10.00,
         "type": "Breakfast"
     },
     {
         "id" : "bf-004",
-        "product": "Natural Fruit Juice",
+        "name": "Natural Fruit Juice",
         "price":7.00,
         "type": "Breakfast"
     },
     {
         "id" : "ad-001",
-        "product":"Simple Beef Hamburger",
+        "name":"Simple Beef Hamburger",
         "price":10.00,
         "type": "All Day"
     },
     {
         "id" : "ad-002",
-        "product": "Simple Chicken Hamburguer",
+        "name": "Simple Chicken Hamburguer",
         "price":10.00,
         "type": "All Day"
     },
     {
         "id" : "ad-003",
-        "product": "Simple Vegetarian Hamburguer",
+        "name": "Simple Vegetarian Hamburguer",
         "price":10.00,
         "type": "All Day"
         
     },
     {
         "id" : "ad-004",
-        "product":"Double Hamburger",
+        "name":"Double Hamburger",
         "price":15.00,
         "type": "All Day"
     },
     {
         "id" : "ad-005",
-        "product":"Jam and Cheese Hamburger",
+        "name":"Jam and Cheese Hamburger",
         "price":10.00,
         "type": "All Day"
     },
     {
         "id" : "ad-006",
-        "product": "Natural Fruits Juice",
+        "name": "Natural Fruits Juice",
         "price":7.00,
         "type": "All Day"
     },
     {
         "id" : "ad-007",
-        "product":"Cheese",
+        "name":"Cheese",
         "price":1.00,
         "type": "All Day"
     },
     {
         "id" : "ad-008",
-        "product":"Egg",
+        "name":"Egg",
         "price":1.00,
         "type": "All Day"
     },
     {
         "id" : "ad-009",
-        "product":"French Fries",
+        "name":"French Fries",
         "price":5.00,
         "type": "All Day"
     },
     {
         "id" : "ad-010",
-        "product":"Onion rings",
+        "name":"Onion rings",
         "price":5.00,
         "type": "All Day"
     },
     {
         "id" : "ad-011",
-        "product":"Water 500ml",
+        "name":"Water 500ml",
         "price":5.00,
         "type": "All Day"
         
     },
     {
         "id" : "ad-012",
-        "product":"Water 750ml",
+        "name":"Water 750ml",
         "price":7.00,
         "type": "All Day"
     },
     {
         "id" : "ad-013",
-        "product":"Drink/soda 500ml",
+        "name":"Drink/soda 500ml",
         "price":7.00,
         "type": "All Day"
     },
     {
         "id" : "ad-014",
-        "product":"Drink/soda 750ml",
+        "name":"Drink/soda 750ml",
         "price":10.00,
         "type": "All Day"
     }
