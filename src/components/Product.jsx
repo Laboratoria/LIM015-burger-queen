@@ -16,11 +16,12 @@ export default function Product({product, menu, order, setOrder}) {
               order.map((element)=>
               element.id === product.id ?
               { ...selectedProduct,
-                quantity: selectedProduct.quantity + 1 
+                quantity: selectedProduct.quantity + 1,
+                subtotal: selectedProduct.price*(selectedProduct.quantity+1)
               } : element )
             )
         } else{
-          setOrder([...order, {...product, quantity:1}]);
+          setOrder([...order, {...product, quantity:1, subtotal: product.price }]);
         }
     }
   return (
