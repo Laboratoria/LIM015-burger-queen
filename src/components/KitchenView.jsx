@@ -5,20 +5,20 @@ export const KitchenView = () => {
   return (
       <section className="generalBox container">
         <header className="ordersHead"> ORDERS </header>
-        <br />
         <section className="subGeneralBox">
           <section className="headerOfGeneralBox">
-            <div className="nameClient"> Client: {}</div>
+            <div className="nameClient boxes"> Client: {}</div>
             <div className="hourSection">
-              <div className="checkinTime"> Check-In Time: </div>
-              <div className="checkinTime"> End Time: </div>
+              <div className="checkinTime boxes "> Check-in time: </div>
+              <div className="endTime boxes"> End time: </div>
               <div className="chronometer">"Aqui va a ir el cronometro"</div>
             </div>
-            <div className="mainBox">
-              <button type="check">ProductName:{} <br /> Quantity: {}</button>
-              <div>Poner un check verde encimadel cuadrado </div>
-            </div>
-            <button className="btnComplete">COMPLETE</button>
+          </section>
+          <section className="mainBox boxes">
+            <button className='check' type="check">Sandwich{} <br /> 4 {}</button>
+          </section>
+          <section className='sectionSubmit'>
+          <button className="btnComplete">COMPLETE</button>
           </section>
         </section>
       </section>
