@@ -7,17 +7,19 @@ import { FaRegTrashAlt } from "react-icons/fa";
 
 export default function Order({ order, setOrder }) {
   // **.reduce -> recibe'4' argumentos: acumulador(acc)
+
   const total = order.reduce((acc, item) => acc + item.subtotal, 0);
   const inputName = useRef();
 
   const addOrdersFirebase = async (e) => {
+    //Guardar en base de datos firebase 
     e.preventDefault();
     let orderProduct = {};
     orderProduct.nameCustomer = inputName.current.value;
     orderProduct.products = order;
     orderProduct.created_at = new Date();
     orderProduct.status = "pending";
-    console.log(orderProduct);
+    console.log(orderProduct.nameCustomer);
 
     const docRef = await addDoc(collection(db, "orders"), {
       nameCustomer: inputName.current.value,
@@ -26,7 +28,7 @@ export default function Order({ order, setOrder }) {
       status: "pending",
     });
 
-    console.log("Document written with ID: ", docRef.id);
+    console.log("Document written with ID: ", docRef.id );
   };
 
   const btnMinus = (id) => {

@@ -4,7 +4,7 @@ import "./MenuView.css";
 import lineImage from "../images/line.png";
 import Order from "./Order";
 import Product from "./Product";
-// import { Button } from 'react-bootstrap';
+
 
 export function MenuView() {
   const [menu, setMenu] = useState([]);
