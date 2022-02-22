@@ -24,9 +24,10 @@ export default function Order({ order, setOrder }) {
     const docRef = await addDoc(collection(db, "orders"), {
       nameCustomer: inputName.current.value,
       products: order,
-      created: new Date(),
+      created: new Date().toLocaleString(),
       status: "pending",
     });
+    // console.log(new Date().toLocaleString())
 
     console.log("Document written with ID: ", docRef.id );
   };
