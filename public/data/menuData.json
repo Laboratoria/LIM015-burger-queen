@@ -1,0 +1,114 @@
+[
+    {
+        "id" : "bf-001",
+        "name": "American Coffe",
+        "price":5.00,
+        "type": "Breakfast"
+    },
+    {
+        "id" : "bf-002",
+        "name": "Milk with Coffe",
+        "price":7.00,
+        "type": "Breakfast"
+    },
+    {
+        "id" : "bf-003",
+        "name": "Jam and Cheese Hamburger",
+        "price":10.00,
+        "type": "Breakfast"
+    },
+    {
+        "id" : "bf-004",
+        "name": "Natural Fruit Juice",
+        "price":7.00,
+        "type": "Breakfast"
+    },
+    {
+        "id" : "ad-001",
+        "name":"Simple Beef Hamburger",
+        "price":10.00,
+        "type": "All Day"
+    },
+    {
+        "id" : "ad-002",
+        "name": "Simple Chicken Hamburguer",
+        "price":10.00,
+        "type": "All Day"
+    },
+    {
+        "id" : "ad-003",
+        "name": "Simple Vegetarian Hamburguer",
+        "price":10.00,
+        "type": "All Day"
+        
+    },
+    {
+        "id" : "ad-004",
+        "name":"Double Hamburger",
+        "price":15.00,
+        "type": "All Day"
+    },
+    {
+        "id" : "ad-005",
+        "name":"Jam and Cheese Hamburger",
+        "price":10.00,
+        "type": "All Day"
+    },
+    {
+        "id" : "ad-006",
+        "name": "Natural Fruits Juice",
+        "price":7.00,
+        "type": "All Day"
+    },
+    {
+        "id" : "ad-007",
+        "name":"Cheese",
+        "price":1.00,
+        "type": "All Day"
+    },
+    {
+        "id" : "ad-008",
+        "name":"Egg",
+        "price":1.00,
+        "type": "All Day"
+    },
+    {
+        "id" : "ad-009",
+        "name":"French Fries",
+        "price":5.00,
+        "type": "All Day"
+    },
+    {
+        "id" : "ad-010",
+        "name":"Onion rings",
+        "price":5.00,
+        "type": "All Day"
+    },
+    {
+        "id" : "ad-011",
+        "name":"Water 500ml",
+        "price":5.00,
+        "type": "All Day"
+        
+    },
+    {
+        "id" : "ad-012",
+        "name":"Water 750ml",
+        "price":7.00,
+        "type": "All Day"
+    },
+    {
+        "id" : "ad-013",
+        "name":"Drink/soda 500ml",
+        "price":7.00,
+        "type": "All Day"
+    },
+    {
+        "id" : "ad-014",
+        "name":"Drink/soda 750ml",
+        "price":10.00,
+        "type": "All Day"
+    }
+    
+]
+

@@ -1,0 +1,39 @@
+[{
+        "breakfast": {
+            "american coffe": 5.00,
+            "milk with coffe":	7.00,
+            "jam and cheese hamburger":	10.00,
+            "natural fruits juice":	7.00
+        }},
+        {
+        "lunch": {
+            "hamburgers":{
+                "type":[
+                    "beef", 
+                    "chicken",
+                    "vegetarian"
+                ],
+                "simple hamburger": 10.00,
+                "Double hamburger":	15.00,
+                "jam and cheese hamburger":	10.00,
+                "natural fruits juice":	7.00,
+                "plus":{
+                    "cheese": 1.00,
+                    "egg": 1.00
+                }
+            },
+            "accompaniments":{
+                "French fries": 5.00,
+                "Onion rings":	5.00
+            },
+            "drinks":{
+                "Water 500ml": 5.00,
+                "Water 750ml":	7.00,
+                "Drink / soda 500ml":	7.00,
+                "Drink / soda 750ml": 10.00
+            }
+
+        }
+        
+}]
+
